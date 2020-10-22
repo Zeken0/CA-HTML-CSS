@@ -1,6 +1,6 @@
 <img src="./.readme/noroff-light.png" width="160" align="right">
 
-# Course Assignment
+# HTML and CSS Course Assignment
 
 ## Goal
 To put into practice everything you’ve learned about HTML and CSS over this course.
