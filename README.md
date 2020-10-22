@@ -22,3 +22,4 @@ You need to submit:
 - A link to your GitHub repository. Your last commit must be before your deadline.
 - A link to your website live on Netlify.
 - A PDF report on images which you have used and/or any other sources which you used as inspiration from the internet. EG: Where you went to a website to look for code that is similar to what you have done.
+- The last time you can commit code to this repo is at **23:59 on the 1st November 2020**, if you make any commits thereafter your assignment will be graded as a 0.
