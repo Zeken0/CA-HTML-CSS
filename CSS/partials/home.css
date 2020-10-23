@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -14,19 +16,54 @@ body {
 
 header {
   display: grid;
-  grid-template-rows:
-    "logo"
-    "header_search-bar"
-    "header_icons"
-    "menu";
-  color: white;
+  grid-template-areas:
+    "logo header_search-bar header_icons"
+    "menu menu menu";
   grid-area: header;
   background-color: #0b1440;
+  color: white;
   height: 90px;
+  align-items: center;
 }
 
 .logo {
   grid-area: logo;
+  width: 315px;
+}
+
+.header_search-bar {
+  grid-area: header_search-bar;
+  width: 850px;
+}
+
+.header_search-bar2 {
+  align-self: center;
+
+  width: 600px;
+  height: 25px;
+}
+
+.header_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  grid-area: header_icons;
+  width: 90px;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+nav {
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
 }
 
 main {
@@ -44,7 +81,6 @@ main .hero__banner {
 }
 
 main .hero_btn {
-  justify-content: flex-start;
   color: white;
   background-color: #f89a3d;
   border-radius: 4px;
@@ -61,32 +97,134 @@ main .hero_price {
   font-size: 2.5rem;
 }
 
+.container {
+  display: grid;
+  grid-template-areas: "box1 box2 box3 box4 box5";
+  justify-content: space-evenly;
+}
+.container-bottom {
+  display: grid;
+  grid-template-areas: "box1 box2 box3 box4 box5";
+  justify-content: space-evenly;
+}
+.bottom1 {
+  width: 200px;
+  height: 20px;
+  background-color: blue;
+  grid-area: box1;
+}
+.bottom2 {
+  width: 200px;
+  height: 20px;
+  background-color: blue;
+  grid-area: box2;
+}
+.bottom3 {
+  width: 200px;
+  height: 20px;
+  background-color: blue;
+  grid-area: box3;
+}
+.bottom4 {
+  width: 200px;
+  height: 20px;
+  background-color: blue;
+  grid-area: box4;
+}
+.bottom5 {
+  width: 100px;
+  height: 20px;
+  background-color: blue;
+  grid-area: box5;
+}
+
+.card1 {
+  width: 200px;
+  height: 300px;
+  grid-area: box1;
+  background-image: url(/img/fifa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card2 {
+  width: 200px;
+  height: 300px;
+  grid-area: box2;
+  background-image: url(/img/cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3 {
+  width: 200px;
+  height: 300px;
+  grid-area: box3;
+  background-image: url(/img/ac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card4 {
+  width: 200px;
+  height: 300px;
+  grid-area: box4;
+  color: white;
+  background-image: url(/img/w3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card5 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  grid-area: box5;
+}
+
+.products2 {
+  flex-direction: column;
+}
+
 main .products .products__trending {
   border: solid 2px red;
-  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-main .products .products__bestsellers {
+main .products2 .products__bestsellers {
   border: solid 2px red;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-main .products .products__latest-releases {
+main .products2 .products__latest-releases {
   border: solid 2px red;
-  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.products .products__pre-order {
+main .products2 .products__pre-order {
   border: solid 2px red;
-  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 footer {
-  border: solid red 2px;
+  display: grid;
+  grid-template-areas: "footer_list1 footer_list2 footer_list3 footer_icons";
   color: white;
   grid-area: footer;
   background-color: #0b1440;
   height: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .fa-instagram,
+.fa-twitter,
+.fa-facebook-f {
+  font-size: 40px;
+  margin-left: 25px;
 }
 
 @media (max-width: 1200px) {
