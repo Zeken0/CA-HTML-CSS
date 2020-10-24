@@ -34,11 +34,10 @@ header {
 .header_search-bar {
   grid-area: header_search-bar;
   width: 850px;
+  justify-self: right;
 }
 
 .header_search-bar2 {
-  align-self: center;
-
   width: 600px;
   height: 25px;
 }
@@ -66,18 +65,27 @@ nav ul {
 main {
   grid-area: main;
   background-color: #f9f9f9;
-  position: relative;
 }
 
-main .hero__banner {
+main .hero_banner {
   background-image: url("/img/Image\ 11.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 450px;
+  width: 100%;
+}
+
+.hero_banner_stuff {
+  display: grid;
+  grid-template-areas:
+    "hero_price"
+    "hero_btn";
+  justify-content: right;
 }
 
 main .hero_btn {
+  grid-area: hero_btn;
   color: white;
   background-color: #f89a3d;
   border-radius: 4px;
@@ -87,10 +95,8 @@ main .hero_btn {
 }
 
 main .hero_price {
+  grid-area: hero_price;
   color: #f89a3d;
-  position: absolute;
-  left: 985px;
-  bottom: 520px;
   font-size: 2.5rem;
 }
 
@@ -100,45 +106,16 @@ main .hero_price {
     "top1"
     "top2";
   justify-content: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .container {
   display: grid;
   grid-template-areas: "box1 box2 box3 box4 box5";
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80%;
   margin: auto;
-}
-
-.container-bottom {
-  display: grid;
-  grid-template-areas: "box1 box2 box3 box4 box5";
-  justify-content: space-evenly;
-  width: 80%;
-  margin: auto;
-}
-.bottom1 {
-  width: 200px;
-  height: 20px;
-  grid-area: box1;
-}
-.bottom2 {
-  width: 200px;
-  height: 20px;
-
-  grid-area: box2;
-}
-.bottom3 {
-  width: 200px;
-  height: 20px;
-  grid-area: box3;
-}
-.bottom4 {
-  width: 200px;
-  height: 20px;
-  grid-area: box4;
 }
 
 .card1 {
@@ -171,18 +148,151 @@ main .hero_price {
   width: 200px;
   height: 300px;
   grid-area: box4;
-  color: white;
   background-image: url(/img/w3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-main .products .products__trending {
-  border: solid 2px red;
-  display: flex;
-  justify-content: space-evenly;
+.container-bottom {
+  display: grid;
+  grid-template-areas: "box1 box2 box3 box4 box5";
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.bottom1 {
+  width: 200px;
+  height: 20px;
+  grid-area: box1;
+}
+.bottom2 {
+  width: 200px;
+  height: 20px;
+
+  grid-area: box2;
+}
+.bottom3 {
+  width: 200px;
+  height: 20px;
+  grid-area: box3;
+}
+.bottom4 {
+  width: 200px;
+  height: 20px;
+  grid-area: box4;
 }
 
+.container-top2 {
+  display: grid;
+  grid-template-areas: "top3 top4 top5";
+  justify-content: space-evenly;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-areas:
+    "game1 game2 game3"
+    "game4 game5 game6"
+    "game7 game8 game9";
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  row-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.game1 {
+  width: 150px;
+  height: 250px;
+  grid-area: game1;
+  background-image: url(/img/cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game2 {
+  width: 150px;
+  height: 250px;
+  grid-area: game2;
+  background-image: url(/img/fifa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game3 {
+  width: 150px;
+  height: 250px;
+  grid-area: game3;
+  background-image: url(/img/ac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game4 {
+  width: 150px;
+  height: 250px;
+  grid-area: game4;
+  background-image: url(/img/ac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game5 {
+  width: 150px;
+  height: 250px;
+  grid-area: game5;
+  background-image: url(/img/cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game6 {
+  width: 150px;
+  height: 250px;
+  grid-area: game6;
+  background-image: url(/img/fifa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game7 {
+  width: 150px;
+  height: 250px;
+  grid-area: game7;
+  background-image: url(/img/fifa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game8 {
+  width: 150px;
+  height: 250px;
+  grid-area: game8;
+  background-image: url(/img/ac.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game9 {
+  width: 150px;
+  height: 250px;
+  grid-area: game9;
+  background-image: url(/img/cp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-bottom2 {
+  display: grid;
+  grid-template-areas:
+    "game-bottom1 gamebottom2 gamebottom3"
+    "gamebottom4 gamebottom5 gamebottom6"
+    "gamebottom7 gamebottom8 gamebottom9";
+  justify-content: space-around;
+}
 footer {
   display: grid;
   grid-template-areas: "footer_list1 footer_list2 footer_list3 footer_icons";
