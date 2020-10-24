@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "logo header_search-bar header_icons"
+    "menu menu menu";
+  grid-area: header;
+  background-color: #0b1440;
+  color: white;
+  height: 90px;
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  width: 315px;
+}
+
+.header_search-bar {
+  grid-area: header_search-bar;
+  width: 850px;
+  justify-self: right;
+}
+
+.header_search-bar2 {
+  width: 600px;
+  height: 25px;
+}
+
+.header_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  grid-area: header_icons;
+  width: 90px;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
+}
+
+main {
+  grid-area: main;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "container-head"
+    "container-main"
+    "container-bottom";
+  justify-content: center;
+}
+
+.container-head {
+  grid-area: container-head;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-self: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: bold;
+}
+
+.container-main {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5";
+  row-gap: 20px;
+  grid-area: container-main;
+}
+
+.box-1 {
+  width: 365px;
+  height: 20px;
+}
+
+.box-2 {
+  width: 365px;
+  height: 20px;
+}
+
+.box-3 {
+  width: 365px;
+  height: 20px;
+}
+
+.box-4 {
+  width: 365px;
+  height: 20px;
+}
+
+.box-5 {
+  border-radius: 2px;
+}
+
+.container-bottom {
+  grid-area: container-bottom;
+  margin-top: 20px;
+  justify-self: center;
+}
+
+.container-btn {
+  height: 40px;
+  width: 110px;
+  border-radius: 2px;
+  font-size: 1.2em;
+  background-color: #f89a3d;
+  border-color: #f89a3d;
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "footer_list1 footer_list2 footer_list3 footer_icons";
+  color: white;
+  grid-area: footer;
+  background-color: #0b1440;
+  height: 150px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer .fa-instagram,
+.fa-twitter,
+.fa-facebook-f {
+  font-size: 40px;
+  margin-left: 25px;
+}
+
+@media (max-width: 1200px) /*Desktop*/ {
+}
+
+@media (max-width: 991px) /*Tablet*/ {
+}
+
+@media (max-width: 767px) /*Mobile*/ {
+}

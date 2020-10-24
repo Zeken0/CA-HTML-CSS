@@ -293,6 +293,7 @@ main .hero_price {
     "gamebottom7 gamebottom8 gamebottom9";
   justify-content: space-around;
 }
+
 footer {
   display: grid;
   grid-template-areas: "footer_list1 footer_list2 footer_list3 footer_icons";
@@ -311,14 +312,11 @@ footer .fa-instagram,
   margin-left: 25px;
 }
 
-@media (max-width: 1200px) {
-  /*Desktop*/
+@media (max-width: 1200px) /*Desktop*/ {
 }
 
-@media (max-width: 991px) {
-  /*Tablet*/
+@media (max-width: 991px) /*Tablet*/ {
 }
 
-@media (max-width: 767px) {
-  /*Mobile*/
+@media (max-width: 767px) /*Mobile*/ {
 }
