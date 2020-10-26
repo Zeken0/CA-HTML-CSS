@@ -1,4 +1,6 @@
 @import "../CSS/partials/variables.css";
 @import "../CSS/partials/layout.css";
 @import "../CSS/partials/home.css";
-@import "../CSS/partials/games.css";
+@import "../CSS/partials/games-page.css";
+@import "../CSS/partials/contact-page.css";
+@import "../CSS/partials/sign-in.css";

@@ -72,53 +72,71 @@ main {
 .container {
   display: grid;
   grid-template-areas:
-    "container-head"
-    "container-main";
-  justify-content: center;
-  margin: 2rem auto;
+    "container-left container-right"
+    "container-bottom container-bottom";
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.container-head {
-  grid-area: container-head;
-  margin-top: 40px;
-  justify-self: center;
-  border: solid 2px red;
+.container-left {
+  grid-area: container-left;
+  border: solid purple 2px;
+  margin-left: auto;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-style: bold;
+.cl-pic {
+  background-color: gray;
+  height: 300px;
+  width: 200px;
 }
 
-.container-main {
-  display: grid;
-  grid-template-areas: "form";
-  grid-area: container-main;
-  border: solid red 2px;
-  margin: 2rem 2rem 2rem 2rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input,
-textarea {
-  display: block;
-  height: 20px;
+.container-right {
+  grid-area: container-right;
+  border: solid green 2px;
   width: 600px;
-  margin-bottom: 10px;
+  margin-left: 50px;
 }
 
-.container-btn {
-  height: 40px;
-  width: 110px;
-  border-radius: 2px;
-  font-size: 1.2em;
+.cr-price {
+  margin-top: 20px;
+}
+
+.cr-text {
+  margin-top: 30px;
+  width: 400px;
+}
+
+.cr-hero-price {
+  color: #f89a3d;
+  font-size: 2.2rem;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.cr-btn {
+  margin-top: 10px;
+}
+
+.cr-hero-btn {
   background-color: #f89a3d;
   border-color: #f89a3d;
   color: white;
+  height: 45px;
+  width: 370px;
+  border-radius: 2px;
+  font-size: 1rem;
+  font-style: inherit;
+}
+
+.container-bottom {
+  grid-area: container-bottom;
+  border: solid black 2px;
+  margin-top: 20px;
 }
 
 footer {
