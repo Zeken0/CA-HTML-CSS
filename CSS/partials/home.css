@@ -26,6 +26,14 @@ header {
   align-items: center;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 .logo {
   grid-area: logo;
   width: 315px;
@@ -74,6 +82,7 @@ main .hero_banner {
   background-repeat: no-repeat;
   height: 450px;
   width: 100%;
+  position: relative;
 }
 
 .hero_banner_stuff {
@@ -81,7 +90,9 @@ main .hero_banner {
   grid-template-areas:
     "hero_price"
     "hero_btn";
-  justify-content: right;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
 }
 
 main .hero_btn {
@@ -92,21 +103,28 @@ main .hero_btn {
   border-color: #f89a3d;
   height: 50px;
   width: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hero_btn:hover {
+  border-color: #f89a3d;
+  background-color: white;
+  color: #f89a3d;
 }
 
 main .hero_price {
   grid-area: hero_price;
   color: #f89a3d;
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .container-top {
   display: grid;
-  grid-template-areas:
-    "top1"
-    "top2";
+  grid-template-areas: "top1";
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
   margin-top: 30px;
 }
 
@@ -183,6 +201,11 @@ main .hero_price {
   grid-area: box4;
 }
 
+.ct-2 {
+  margin-top: 10rem;
+  margin-bottom: 2.5rem;
+}
+
 .container-top2 {
   display: grid;
   grid-template-areas: "top3 top4 top5";
@@ -197,15 +220,15 @@ main .hero_price {
     "game1 game2 game3"
     "game4 game5 game6"
     "game7 game8 game9";
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 80%;
   margin: auto;
   row-gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 4rem;
 }
 
 .game1 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game1;
   background-image: url(/img/cp.png);
@@ -214,7 +237,7 @@ main .hero_price {
 }
 
 .game2 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game2;
   background-image: url(/img/fifa.png);
@@ -223,7 +246,7 @@ main .hero_price {
 }
 
 .game3 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game3;
   background-image: url(/img/ac.png);
@@ -232,7 +255,7 @@ main .hero_price {
 }
 
 .game4 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game4;
   background-image: url(/img/ac.png);
@@ -241,7 +264,7 @@ main .hero_price {
 }
 
 .game5 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game5;
   background-image: url(/img/cp.png);
@@ -250,7 +273,7 @@ main .hero_price {
 }
 
 .game6 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game6;
   background-image: url(/img/fifa.png);
@@ -259,7 +282,7 @@ main .hero_price {
 }
 
 .game7 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game7;
   background-image: url(/img/fifa.png);
@@ -268,7 +291,7 @@ main .hero_price {
 }
 
 .game8 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game8;
   background-image: url(/img/ac.png);
@@ -277,21 +300,12 @@ main .hero_price {
 }
 
 .game9 {
-  width: 150px;
+  width: 100%;
   height: 250px;
   grid-area: game9;
   background-image: url(/img/cp.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container-bottom2 {
-  display: grid;
-  grid-template-areas:
-    "game-bottom1 gamebottom2 gamebottom3"
-    "gamebottom4 gamebottom5 gamebottom6"
-    "gamebottom7 gamebottom8 gamebottom9";
-  justify-content: space-around;
 }
 
 footer {

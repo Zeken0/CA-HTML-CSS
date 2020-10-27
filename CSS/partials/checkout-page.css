@@ -3,7 +3,6 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  outline: none;
 }
 
 body {
@@ -13,7 +12,6 @@ body {
     "main"
     "footer";
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
 }
 
 header {
@@ -44,12 +42,7 @@ a:visited {
 .header_search-bar {
   grid-area: header_search-bar;
   width: 850px;
-  display: flex;
-}
-
-.fa-search {
-  margin-top: 5px;
-  margin-left: 5px;
+  justify-self: right;
 }
 
 .header_search-bar2 {
@@ -61,6 +54,7 @@ a:visited {
   display: flex;
   justify-content: center;
   gap: 10px;
+
   grid-area: header_icons;
   width: 90px;
 }
@@ -79,71 +73,45 @@ nav ul {
 main {
   grid-area: main;
   background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.checkout_container {
+  border: solid 2px black;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.checkout_content {
+  display: grid;
+  grid-template-areas: ".checkout-left .checkout-right";
   height: 100%;
 }
 
-.container {
-  display: grid;
-  grid-template-areas:
-    "container-head"
-    "container-main";
-  justify-content: center;
-  margin: 2rem auto;
+.checkout-left {
+  grid-area: checkout-left;
+  border: solid 2px red;
+  display: flex;
 }
 
-.container-head {
-  grid-area: container-head;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  justify-self: center;
+.game-cover {
+  background-color: #dddddd;
+  height: 200px;
+  width: 150px;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-style: bold;
-}
-
-.container-main {
-  display: grid;
-  grid-template-areas: "form";
-  grid-area: container-main;
-  margin: 2rem 2rem 2rem 2rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input,
-textarea {
-  display: block;
-  height: 20px;
-  width: 600px;
-  margin-bottom: 10px;
-}
-
-#question {
-  height: 150px;
-}
-
-.container-btn {
-  margin-top: 40px;
+#nummber {
   height: 40px;
-  width: 110px;
-  border-radius: 4px;
-  border-color: #f89a3d;
-  background-color: #f89a3d;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
+  width: 60px;
+  text-align: center;
 }
 
-.container-btn:hover {
-  border-color: #f89a3d;
-  background-color: white;
-  color: #f89a3d;
+.checkout-right {
+  grid-area: checkout-right;
+  border: solid 2px blue;
 }
+
 footer {
   display: grid;
   grid-template-areas: "footer_list1 footer_list2 footer_list3 footer_icons";

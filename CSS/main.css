@@ -3,4 +3,8 @@
 @import "../CSS/partials/home.css";
 @import "../CSS/partials/games-page.css";
 @import "../CSS/partials/contact-page.css";
+@import "../CSS/partials/account-page.css";
+@import "../CSS/partials/checkout-page.css";
 @import "../CSS/partials/sign-in.css";
+@import "../CSS/partials/store.css";
+@import "../CSS/partials/checkout-success.css";

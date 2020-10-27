@@ -52,7 +52,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 10px;
-
   grid-area: header_icons;
   width: 90px;
 }
@@ -95,7 +94,7 @@ p {
   margin-top: 1.5rem;
   height: 40px;
   width: 180px;
-  border-radius: 1px;
+  border-radius: 2px;
   border-color: #f89a3d;
   background-color: #f89a3d;
   color: white;

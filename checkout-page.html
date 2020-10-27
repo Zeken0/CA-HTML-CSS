@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="A game site">
-    <link rel="stylesheet" href="/CSS/partials/sign-in.css">
+    <link rel="stylesheet" href="/CSS/partials/checkout-page.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/31d00bb5b7.js" crossorigin="anonymous"></script>
@@ -34,46 +34,17 @@
         </div>
     </header>
 
-    <main>
-        <section class="container">
-            <section class="container-left">
-                <div class="title-1"><h1>Sign in</h1></div>
-                <div class="cl-form">
-                    <form class="form-1">
-                        <label for="email">Email</label>
-                        <input type="email"id="email">
-
-                        <label for="password">Password</label>
-                        <input type="password" id="password">
-
-                        <button type="submit" id="cl-btn">Sign in</button>
-
-                    </form>
-                </div>
-            </section>
-            <section class="container-right">
-                <div class="title-2"><h2>Create an account</h2></div>
-                <div class="cr-form">
-                    <form class="form-2">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name">
-
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name">
-
-                        <label for="birthday">Birthday</label>
-                        <input type="date" id="birthday">
-
-                        <label for="email2">Email</label>
-                        <input type="email" id="email2">
-
-                        <label for="password2">Password</label>
-                        <input type="password" id="password2">
-
-                        <button type="submit" id="cr-btn">Sign up now</button>
-                    </form>
-                </div>
-            </section>
+    <main class="checkout_container">
+        <section class="checkout_content">
+            <div class="checkout-left">
+                <div class="game-cover"></div>
+                <h3>Game name(PC)</h3>
+                <label for="nummber">gty</label>
+                <input type="number" placeholder="0" id="nummber">
+                <h2>Order total:</h2>
+                <h3>$0.00</h3>
+            </div> 
+            <div class="checkout-right"></div> 
         </section>
     </main>
 

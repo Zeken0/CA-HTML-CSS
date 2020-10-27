@@ -27,6 +27,14 @@ header {
   align-items: center;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 .logo {
   grid-area: logo;
   width: 315px;
@@ -69,34 +77,41 @@ main {
   height: 100vh;
 }
 
-.container {
+.games__container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.games__content {
   display: grid;
   grid-template-areas:
     "container-left container-right"
-    "container-bottom container-bottom";
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+    "cb-text cb-text";
 }
 
 .container-left {
   grid-area: container-left;
-  border: solid purple 2px;
-  margin-left: auto;
+}
+
+.container-right {
+  grid-area: container-right;
+  padding-left: 20rem;
+}
+
+.cb-text {
+  grid-area: cb-text;
+  margin-top: 4rem;
+}
+
+.t2 {
+  margin-bottom: 10px;
 }
 
 .cl-pic {
   background-color: gray;
   height: 300px;
   width: 200px;
-}
-
-.container-right {
-  grid-area: container-right;
-  border: solid green 2px;
-  width: 600px;
-  margin-left: 50px;
 }
 
 .cr-price {
@@ -128,15 +143,18 @@ p {
   color: white;
   height: 45px;
   width: 370px;
-  border-radius: 2px;
-  font-size: 1rem;
-  font-style: inherit;
+  border-radius: 4px;
+  border-color: #f89a3d;
+  background-color: #f89a3d;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.container-bottom {
-  grid-area: container-bottom;
-  border: solid black 2px;
-  margin-top: 20px;
+.cr-hero-btn:hover {
+  border-color: #f89a3d;
+  background-color: white;
+  color: #f89a3d;
 }
 
 footer {
