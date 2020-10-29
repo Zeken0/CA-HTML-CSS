@@ -54,7 +54,6 @@ a:visited {
   display: flex;
   justify-content: center;
   gap: 10px;
-
   grid-area: header_icons;
   width: 90px;
 }
@@ -85,13 +84,18 @@ main {
 
 .checkout_content {
   display: grid;
-  grid-template-areas: ".checkout-left .checkout-right";
+  grid-template-areas: "checkout-left checkout-right";
   height: 100%;
 }
 
 .checkout-left {
   grid-area: checkout-left;
   border: solid 2px red;
+
+  display: grid;
+  grid-template-areas:
+    "cl-1 cl-2"
+    "cl-3 cl-3";
   display: flex;
 }
 
@@ -110,6 +114,79 @@ main {
 .checkout-right {
   grid-area: checkout-right;
   border: solid 2px blue;
+  display: grid;
+  grid-template-areas:
+    "cr-1 cr-1"
+    "cr-2 cr-2"
+    "cr-3 cr-4"
+    "cr-5 cr-5"
+    "cr-6 cr-6";
+}
+
+.cr-a {
+  width: 30%;
+}
+
+.cr-b {
+  width: 70%;
+}
+
+#c-nummber,
+#date-box,
+#cvc-box,
+#c-box {
+  display: block;
+}
+
+.cr-1 {
+  grid-area: cr-1;
+  border: solid 2px red;
+}
+
+.cr-2 {
+  grid-area: cr-2;
+  border: solid 2px red;
+}
+
+.cr-3 {
+  grid-area: cr-3;
+  border: solid 2px red;
+}
+
+.cr-4 {
+  grid-area: cr-4;
+  border: solid 2px red;
+}
+
+.cr-5 {
+  grid-area: cr-5;
+  border: solid 2px red;
+}
+
+.cr-6 {
+  grid-area: cr-6;
+  border: solid 2px red;
+}
+
+button {
+  color: white;
+  background-color: #f89a3d;
+  border-radius: 4px;
+  border-color: #f89a3d;
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  border-color: #f89a3d;
+  color: #f89a3d;
+}
+
+input {
+  height: 20px;
 }
 
 footer {

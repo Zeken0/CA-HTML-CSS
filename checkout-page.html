@@ -37,14 +37,52 @@
     <main class="checkout_container">
         <section class="checkout_content">
             <div class="checkout-left">
-                <div class="game-cover"></div>
-                <h3>Game name(PC)</h3>
-                <label for="nummber">gty</label>
-                <input type="number" placeholder="0" id="nummber">
-                <h2>Order total:</h2>
-                <h3>$0.00</h3>
+                <div class="cl-1">
+                    <div class="game-cover"></div>
+                    <h3>Game name(PC)</h3>
+                </div>
+                <div class="cl-2">
+                    <label for="nummber">gty</label>
+                    <input type="number" placeholder="0" id="nummber">
+                </div>
+                <div class="cl-3">
+                    <h2>Order total:</h2>
+                    <h3>$0.00</h3>
+                </div>    
             </div> 
-            <div class="checkout-right"></div> 
+            <div class="checkout-right">
+                <div class="cr-1">
+                    <div class="cr-a">
+                        <img src="/img/visa.png" alt="credit card icons">
+                    </div>
+                    <div class="cr-b">
+                        <h2>CREDIT/ DEBIT CARD</h2>
+                    </div>
+                </div>
+                <div class="cr-2">
+                    <label for="c-nummber">Card nummber</label>
+                    <input type="text" id="c-nummber" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="cr-3">
+                    <label for="date-box">Expiry date</label>
+                    <input type="text" id="date-box" placeholder="MM/YY">
+                </div>
+                <div class="cr-4">
+                    <label for="cvc-box">CVC/CVV</label>
+                    <input type="text" id="cvc-box" placeholder="112">   
+                </div>
+                <div class="cr-5">
+                    <label for="c-box">Save for my next payment</label>
+                    <input type="checkbox" id="c-box">
+                    <p>
+                        A secure, encrypted payment token will be created once your bank approves the purchase. We do not store your card details directly in our database.
+                    </p>
+                </div>
+                <div class="cr-6">
+                    <h3>$0.00</h3>
+                    <button type="submit">PAY FOR YOUR ORDER NOW</button>
+                </div>
+            </div> 
         </section>
     </main>
 

@@ -77,7 +77,6 @@ main {
 }
 
 .store_container {
-  border: solid 2px red;
   width: 80%;
   margin: auto;
   height: 100%;
@@ -88,29 +87,63 @@ main {
   grid-template-areas:
     "sc-top sc-top"
     "sc-left sc-right";
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
 .sc-top {
   grid-area: sc-top;
-  border: solid 2px red;
   height: 100px;
   width: 100%;
+  position: relative;
 }
 
 .sc-left {
   grid-area: sc-left;
-  border: solid 2px red;
-  height: 200px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.all-p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+input {
+  height: 35px;
+  width: 75px;
+  padding-left: 5px;
+}
+
+.input-s {
+  width: 200px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  padding-left: 5px;
+}
+
+.label-s {
+  position: absolute;
+  right: 220px;
+  top: 6px;
 }
 
 .sc-right {
   grid-area: sc-right;
-  border: solid 2px red;
   display: grid;
   grid-template-areas:
     "game1 game2 game3"
     "game4 game5 game6"
     "game7 game8 game9";
+  justify-content: space-between;
+  row-gap: 2.5rem;
 }
 
 .game1 {
