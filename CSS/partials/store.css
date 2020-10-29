@@ -24,6 +24,7 @@ header {
   color: white;
   height: 90px;
   align-items: center;
+  position: relative;
 }
 
 a {
@@ -36,27 +37,33 @@ a:visited {
 
 .logo {
   grid-area: logo;
-  width: 315px;
+  width: 70%;
 }
 
 .header_search-bar {
   grid-area: header_search-bar;
-  width: 850px;
-  justify-self: right;
+  width: 84%;
+  margin-right: 26rem;
 }
 
 .header_search-bar2 {
-  width: 600px;
+  width: 90%;
   height: 25px;
+  padding-left: 5px;
 }
 
 .header_icons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-
   grid-area: header_icons;
-  width: 90px;
+  width: 100%;
+}
+
+.fa-search {
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  margin-right: 15px;
 }
 
 .menu {
@@ -70,10 +77,13 @@ nav ul {
   font-size: 1.2rem;
 }
 
+li a:hover {
+  text-decoration: underline;
+}
+
 main {
   grid-area: main;
   background-color: #f9f9f9;
-  height: 100vh;
 }
 
 .store_container {
@@ -249,7 +259,61 @@ footer .fa-instagram,
 }
 
 @media (max-width: 991px) /*Tablet*/ {
+  header {
+    display: grid;
+    grid-template-areas:
+      "logo header_search-bar header_icons"
+      "menu menu menu";
+    grid-area: header;
+  }
+  .header_search-bar {
+    width: 70%;
+    margin-right: 17rem;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  .header_icons {
+    display: flex;
+    grid-area: header_icons;
+    width: 1%;
+  }
 }
 
 @media (max-width: 767px) /*Mobile*/ {
+  header {
+    display: grid;
+    grid-template-areas:
+      "logo header_search-bar header_icons"
+      "menu menu menu";
+    grid-area: header;
+  }
+
+  .header_search-bar {
+    width: 70%;
+    margin-right: 11rem;
+  }
+
+  .header_search-bar2 {
+    width: 75%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .header_icons {
+    width: 80%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-areas:
+      "footer_list1 footer_list2"
+      "footer_list3 footer_icons";
+    grid-area: footer;
+    height: 210px;
+  }
 }

@@ -24,6 +24,7 @@ header {
   color: white;
   height: 90px;
   align-items: center;
+  position: relative;
 }
 
 a {
@@ -36,26 +37,33 @@ a:visited {
 
 .logo {
   grid-area: logo;
-  width: 315px;
+  width: 70%;
 }
 
 .header_search-bar {
   grid-area: header_search-bar;
-  width: 850px;
-  justify-self: right;
+  width: 84%;
+  margin-right: 26rem;
 }
 
 .header_search-bar2 {
-  width: 600px;
+  width: 90%;
   height: 25px;
+  padding-left: 5px;
 }
 
 .header_icons {
   display: flex;
-  justify-content: center;
-  gap: 10px;
   grid-area: header_icons;
-  width: 90px;
+  width: 100%;
+}
+
+.fa-search {
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  margin-right: 15px;
 }
 
 .menu {
@@ -69,6 +77,10 @@ nav ul {
   font-size: 1.2rem;
 }
 
+li a:hover {
+  text-decoration: underline;
+}
+
 main {
   grid-area: main;
   background-color: #f9f9f9;
@@ -76,7 +88,6 @@ main {
 }
 
 .checkout_container {
-  border: solid 2px black;
   width: 80%;
   margin: auto;
   margin-top: 2rem;
@@ -86,17 +97,47 @@ main {
   display: grid;
   grid-template-areas: "checkout-left checkout-right";
   height: 100%;
+  gap: 4rem;
 }
 
 .checkout-left {
+  border: solid 4px;
+  border-color: white;
   grid-area: checkout-left;
-  border: solid 2px red;
-
   display: grid;
   grid-template-areas:
     "cl-1 cl-2"
     "cl-3 cl-3";
+  height: fit-content;
+  position: relative;
+  padding: 1rem;
+}
+
+.cl-1 {
+  grid-area: cl-1;
   display: flex;
+  gap: 10px;
+  height: fit-content;
+}
+
+.cl-2 {
+  grid-area: cl-2;
+  margin-top: 10.3rem;
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  right: 0px;
+  bottom: 0px;
+}
+
+.cl-3 {
+  grid-area: cl-3;
+  display: flex;
+  gap: 7.6rem;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 1rem;
 }
 
 .game-cover {
@@ -106,14 +147,19 @@ main {
 }
 
 #nummber {
-  height: 40px;
-  width: 60px;
-  text-align: center;
+  height: 35px;
+  width: 45px;
+  text-align: end;
+}
+
+.total-2 {
+  margin-top: 3px;
 }
 
 .checkout-right {
+  border: solid 5px;
+  border-color: white;
   grid-area: checkout-right;
-  border: solid 2px blue;
   display: grid;
   grid-template-areas:
     "cr-1 cr-1"
@@ -121,51 +167,61 @@ main {
     "cr-3 cr-4"
     "cr-5 cr-5"
     "cr-6 cr-6";
+  height: fit-content;
+  padding: 1rem;
 }
 
 .cr-a {
-  width: 30%;
+  grid-area: cr-a;
 }
 
 .cr-b {
-  width: 70%;
+  grid-area: cr-b;
 }
 
 #c-nummber,
 #date-box,
-#cvc-box,
-#c-box {
+#cvc-box {
   display: block;
+  margin-top: 5px;
+  padding-left: 5px;
 }
 
 .cr-1 {
   grid-area: cr-1;
-  border: solid 2px red;
+  display: grid;
+  grid-template-areas: "cr-a cr-b";
+  margin-bottom: 1rem;
 }
 
 .cr-2 {
   grid-area: cr-2;
-  border: solid 2px red;
+  margin-bottom: 1rem;
 }
 
 .cr-3 {
   grid-area: cr-3;
-  border: solid 2px red;
+  margin-bottom: 1rem;
 }
 
 .cr-4 {
   grid-area: cr-4;
-  border: solid 2px red;
+  margin-bottom: 1.5rem;
 }
 
 .cr-5 {
   grid-area: cr-5;
-  border: solid 2px red;
+  margin-bottom: 2rem;
 }
 
 .cr-6 {
   grid-area: cr-6;
-  border: solid 2px red;
+  display: flex;
+  gap: 52%;
+}
+
+.total-1 {
+  margin-top: 15px;
 }
 
 button {
@@ -186,7 +242,19 @@ button:hover {
 }
 
 input {
-  height: 20px;
+  width: 90%;
+  height: 2rem;
+}
+
+#date-box,
+#cvc-box {
+  width: 80%;
+}
+
+#c-box {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 footer {
@@ -211,7 +279,81 @@ footer .fa-instagram,
 }
 
 @media (max-width: 991px) /*Tablet*/ {
+  header {
+    display: grid;
+    grid-template-areas:
+      "logo header_search-bar header_icons"
+      "menu menu menu";
+    grid-area: header;
+  }
+  .header_search-bar {
+    width: 70%;
+    margin-right: 17rem;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+  .header_icons {
+    display: flex;
+    grid-area: header_icons;
+    width: 1%;
+  }
+
+  .checkout_content {
+    display: grid;
+    grid-template-areas: "checkout-left checkout-right";
+    height: 100%;
+  }
+
+  #c-nummber,
+  #date-box,
+  #cvc-box {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) /*Mobile*/ {
+  header {
+    display: grid;
+    grid-template-areas:
+      "logo header_search-bar header_icons"
+      "menu menu menu";
+    grid-area: header;
+  }
+
+  .header_search-bar {
+    width: 70%;
+    margin-right: 11rem;
+  }
+
+  .header_search-bar2 {
+    width: 75%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .header_icons {
+    width: 80%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-areas:
+      "footer_list1 footer_list2"
+      "footer_list3 footer_icons";
+    grid-area: footer;
+    height: 210px;
+  }
+
+  .checkout_content {
+    display: grid;
+    grid-template-areas:
+      "checkout-left"
+      "checkout-right";
+    height: 100%;
+  }
 }

@@ -25,7 +25,6 @@ header {
   height: 90px;
   align-items: center;
   position: relative;
-  border: solid 2px red;
 }
 
 a {
@@ -37,28 +36,30 @@ a:visited {
 }
 
 .logo {
-  border: solid 2px red;
   grid-area: logo;
   width: 70%;
 }
 
 .header_search-bar {
-  border: solid 2px red;
   grid-area: header_search-bar;
-  width: 100%;
-  margin-right: 13rem;
+  width: 84%;
+  margin-right: 26rem;
 }
 
 .header_search-bar2 {
   width: 90%;
   height: 25px;
+  padding-left: 5px;
 }
 
 .header_icons {
-  border: solid 2px red;
   display: flex;
   grid-area: header_icons;
   width: 100%;
+}
+
+.fa-search {
+  cursor: pointer;
 }
 
 .fa-shopping-cart {
@@ -70,11 +71,14 @@ a:visited {
 }
 
 nav ul {
-  border: solid 2px red;
   display: flex;
   justify-content: center;
   gap: 30px;
   font-size: 1.2rem;
+}
+
+li a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -125,6 +129,7 @@ main .hero_price {
   color: #f89a3d;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .container-top {
@@ -318,7 +323,7 @@ footer .fa-instagram,
   }
   .header_search-bar {
     width: 70%;
-    margin: none;
+    margin-right: 17rem;
   }
 
   .logo {
@@ -326,12 +331,9 @@ footer .fa-instagram,
   }
 
   .header_icons {
-    border: solid 2px red;
     display: flex;
     grid-area: header_icons;
-    width: 100%;
-    position: absolute;
-    right: 70px;
+    width: 1%;
   }
 
   main .hero_banner {
@@ -365,6 +367,11 @@ footer .fa-instagram,
 
   .header_search-bar {
     width: 70%;
+    margin-right: 11rem;
+  }
+
+  .header_search-bar2 {
+    width: 75%;
   }
 
   .logo {
@@ -373,6 +380,15 @@ footer .fa-instagram,
 
   .header_icons {
     width: 80%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-areas:
+      "footer_list1 footer_list2"
+      "footer_list3 footer_icons";
+    grid-area: footer;
+    height: 210px;
   }
 
   main .hero_banner {
@@ -408,18 +424,6 @@ footer .fa-instagram,
       "game3"
       "game7"
       "game9";
-  }
-
-  .ct-1 {
-    grid-area: ct-1;
-  }
-
-  .ct-2 {
-    grid-area: ct-2;
-  }
-
-  .ct-3 {
-    grid-area: ct-3;
   }
 
   .ct-1,
