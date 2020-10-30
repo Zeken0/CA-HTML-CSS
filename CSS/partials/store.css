@@ -137,6 +137,7 @@ input {
   right: 0;
   top: 5px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .label-s {
