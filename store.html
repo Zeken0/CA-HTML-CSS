@@ -13,10 +13,12 @@
 <body>
 
     <header>
-        <div class="logo"><img src="/img/Logo.png" alt="logo"></div>
+        <div class="logo">
+            <a href="/home.html"><img src="/img/Logo.png" alt="logo"></a>
+        </div>
         <div class="header_search-bar">
             <input type="search" class="header_search-bar2" placeholder="Search" >
-            <i class="fas fa-search"></i>
+            <a href="/store.html"><i class="fas fa-search"></i></a>
         </div>
         <div class="header_icons">
             <a href="/checkout-page.html"><i class="fas fa-shopping-cart"></i></a>
@@ -37,8 +39,12 @@
     <main class="store_container">
         <section class="store_content">
             <div class="sc-top">
-                <h1>Search resoult</h1>
-                <p>9 resoults for:""</p>
+                <div class="header-1">
+                    <h1>Search resoult</h1>
+                </div>
+                <div class="header-2">
+                    <p>9 resoults for:""</p>
+                </div>
                 <label for="input-s" class="label-s">Sort by</label>
                 <select type="select" id="input-s" class="input-s" >
                     <option>Top Sellers</option>
@@ -47,7 +53,7 @@
                 </select>
             </div>
             <div class="sc-left">
-                <h2>Genre</h2>
+                <div class="header-3"><h2>Genre</h2></div>
             <div class="all-p">
                 <p>Action</p>
                 <p>Action-adventure</p>
@@ -55,7 +61,7 @@
                 <p>Adventure</p>
                 <p>Sports</p>
             </div>
-                <h3>Price ($)</h3>
+                <div class="header-4"><h3>Price ($)</h3></div>
                 <input type="text" placeholder="From">
                 <label for="">-</label>
                 <input type="text" id="text-2" placeholder="To">
