@@ -106,11 +106,15 @@ main {
 .checkout-left-top {
   grid-area: checkout-left-top;
   height: fit-content;
+  font-size: 25px;
+  padding-left: 1rem;
 }
 
 .checkout-right-top {
   grid-area: checkout-right-top;
   height: fit-content;
+  font-size: 20px;
+  padding-left: 1rem;
 }
 
 .checkout-left {
@@ -346,6 +350,18 @@ footer .fa-instagram,
     width: 30rem;
     column-gap: 2rem;
   }
+
+  .checkout-left-top {
+    margin-top: 3rem;
+    padding-left: 1rem;
+    font-size: 30px;
+  }
+
+  .checkout-right-top {
+    margin-top: 3rem;
+    font-size: 21px;
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 767px) /*Mobile*/ {
@@ -438,5 +454,13 @@ footer .fa-instagram,
 
   .cr-b {
     font-size: 0.8rem;
+  }
+
+  .checkout-right-top {
+    margin-top: 0rem;
+  }
+
+  .checkout-left-top {
+    margin-top: 2rem;
   }
 }
