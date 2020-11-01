@@ -148,6 +148,10 @@ main .hero_price {
   margin: auto;
 }
 
+.ct {
+  font-size: 1.5rem;
+}
+
 .card1 {
   width: 200px;
   height: 300px;
@@ -188,6 +192,10 @@ main .hero_price {
 .ct-3 {
   margin-top: 10rem;
   margin-bottom: 2.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
 }
 
 .container-top2 {
