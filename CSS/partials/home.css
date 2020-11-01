@@ -127,7 +127,7 @@ main .hero_btn {
 main .hero_price {
   grid-area: hero_price;
   color: #f89a3d;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -431,5 +431,139 @@ footer .fa-instagram,
   .ct-3 {
     margin-top: 5rem;
     margin-bottom: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ct {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .card1 {
+    width: 388px;
+    height: 550px;
+    grid-area: box1;
+    background-image: url(/img/fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card2 {
+    width: 388px;
+    height: 550px;
+    grid-area: box2;
+    background-image: url(/img/cp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card3 {
+    width: 388px;
+    height: 550px;
+    grid-area: box3;
+    background-image: url(/img/ac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card4 {
+    width: 388px;
+    height: 550px;
+    grid-area: box4;
+    background-image: url(/img/w3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game1 {
+    width: 388px;
+    height: 550px;
+    grid-area: game1;
+    background-image: url(/img/cp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game2 {
+    width: 388px;
+    height: 550px;
+    grid-area: game2;
+    background-image: url(/img/fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game3 {
+    width: 388px;
+    height: 550px;
+    grid-area: game3;
+    background-image: url(/img/ac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game4 {
+    width: 388px;
+    height: 550px;
+    grid-area: game4;
+    background-image: url(/img/ac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game5 {
+    width: 388px;
+    height: 550px;
+    grid-area: game5;
+    background-image: url(/img/cp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game6 {
+    width: 388px;
+    height: 550px;
+    grid-area: game6;
+    background-image: url(/img/fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game7 {
+    width: 388px;
+    height: 550px;
+    grid-area: game7;
+    background-image: url(/img/fifa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game8 {
+    width: 388px;
+    height: 550px;
+    grid-area: game8;
+    background-image: url(/img/ac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .game9 {
+    width: 388px;
+    height: 550px;
+    grid-area: game9;
+    background-image: url(/img/cp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

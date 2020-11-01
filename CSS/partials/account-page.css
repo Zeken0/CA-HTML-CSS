@@ -122,10 +122,6 @@ p {
   margin-top: 2rem;
 }
 
-.country-1 {
-  height: 25px;
-}
-
 #username,
 #full-name,
 #country,
@@ -134,10 +130,6 @@ p {
   height: 25px;
   width: 90%;
   margin-left: 2.5rem;
-}
-
-.birthday {
-  height: 25px;
 }
 
 .hero-btn {
