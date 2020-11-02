@@ -87,7 +87,7 @@ main {
 }
 
 main .hero_banner {
-  background-image: url("/img/Image\ 11.jpg");
+  background-image: url("/img/Image\ 12.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -418,6 +418,7 @@ footer .fa-instagram,
       "box4";
     row-gap: 40px;
     justify-content: space-evenly;
+    margin-bottom: 3rem;
   }
 
   .container2 {
@@ -432,11 +433,13 @@ footer .fa-instagram,
       "game3"
       "game7"
       "game9";
+    row-gap: 3rem;
   }
 
   .ct-1,
   .ct-2,
   .ct-3 {
+    display: none;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
     font-size: 2rem;
