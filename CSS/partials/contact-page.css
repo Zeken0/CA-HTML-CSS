@@ -89,22 +89,19 @@ main {
 .container {
   display: grid;
   grid-template-areas:
+    "title"
     "container-head"
     "container-main";
   justify-content: center;
   margin: 2rem auto;
 }
 
-.container-head {
-  grid-area: container-head;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  justify-self: center;
-}
-
 .title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-style: bold;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .container-main {
